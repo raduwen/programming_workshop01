@@ -12,11 +12,14 @@ Window.loop do
   # カーソルキーの入力があったら移動させる
   if Input.keyDown? K_LEFT
     player_x -= player_v
-  elsif  Input.keyDown? K_RIGHT
+  end
+  if  Input.keyDown? K_RIGHT
     player_x += player_v
-  elsif Input.keyDown? K_UP
+  end
+  if Input.keyDown? K_UP
     player_y -= player_v
-  elsif  Input.keyDown? K_DOWN
+  end
+  if  Input.keyDown? K_DOWN
     player_y += player_v
   end
 

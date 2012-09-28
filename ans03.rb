@@ -10,15 +10,10 @@ player_v = 2
 
 Window.loop do
   # カーソルキーの入力があったら移動させる
-  if Input.padDown? P_LEFT
-    player_x -= player_v
-  elsif Input.padDown? P_RIGHT
-    player_x += player_v
-  elsif Input.padDown? P_UP
-    player_y -= player_v
-  elsif Input.padDown? P_DOWN
-    player_y += player_v
-  end
+  player_x -= player_v if Input.padDown? P_LEFT
+  player_x += player_v if Input.padDown? P_RIGHT
+  player_y -= player_v if Input.padDown? P_UP
+  player_y += player_v if Input.padDown? P_DOWN
 
   Window.draw(player_x, player_y, player)
 end
