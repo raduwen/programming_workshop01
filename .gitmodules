@@ -1,0 +1,3 @@
+[submodule "programming_workshop01.wiki"]
+	path = programming_workshop01.wiki
+	url = https://github.com/raduwen/programming_workshop01.wiki.git
