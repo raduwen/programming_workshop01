@@ -5,5 +5,4 @@ memo
 * Hash
 
 * Font
-* HitCheck
 
