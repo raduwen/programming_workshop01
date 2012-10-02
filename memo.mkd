@@ -1,10 +1,9 @@
 memo
 =====
 
-* if, while, for
-* Array
+* while, for (, case)
 * Hash
 
-* Input
 * Font
+* HitCheck
 
