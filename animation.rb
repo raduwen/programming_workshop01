@@ -1,11 +1,8 @@
 
 require "dxruby"
-require "./player"
+require "./player.rb"
 
 GROUND_HEIGHT = 64
-G = 0.3
-
-background_image = Image.load("bg.png")
 
 ken = Player.new
 ken.load_images({
@@ -20,12 +17,8 @@ ken.addAnimation(:stand) do |count, count_max|
 end
 
 Window.loop do
-  if Input.padDown?(P_LEFT) or Input.padDown?(P_RIGHT)
-    ken.current_type = :walk
-  end
   Sprite.update(ken)
 
-  Window.draw(0, 0, background_image)
   Sprite.draw(ken)
 end
 
