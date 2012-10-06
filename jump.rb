@@ -46,6 +46,7 @@ Window.loop do
     ken.y += ken.vy
     ken.vy += G
     if ken.y > Window.height - ken.height - GROUND_HEIGHT
+      ken.y = Window.height - ken.height - GROUND_HEIGHT
       ken.jump_flag = false
     end
   end
