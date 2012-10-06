@@ -1,8 +1,8 @@
 memo
 =====
 
-* while, for (, case)
-* Hash
-
-* Font
+* [音を鳴らす](wiki/Sound)
+* [テキストを表示する](wiki/Font)
+* [Rubyの機能](wiki/Ruby)
+  while, for, case
 
